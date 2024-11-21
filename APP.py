@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 st.title("Risk Prediction of Early Keratoconus")
 # 创建输入框
 st.subheader("Please enter the following eigenvalues:")
-a = st.number_input("D-index:", min_value=-10.0, max_value=100.0,value=0.0,step=0.1)
-b = st.number_input("BE:", min_value=-50.0, max_value=200.0, value=0.0,step=0.1)
-c = st.number_input("Kmax(D):", min_value=0.0, max_value=100.0, step=0.1)
-d = st.number_input("Galectin-1(pg/mL):", min_value=0.0, max_value=50000.0, step=0.1)
-e = st.number_input("Galectin-3(pg/mL):", min_value=0.0, max_value=50000.0, step=0.1)
-f = st.number_input("IL-1 beta(pg/mL):", min_value=0.0, max_value=50000.0,step=0.1)
+a = st.number_input("D-index:", step=0.1)
+b = st.number_input("BE:",step=0.1)
+c = st.number_input("Kmax(D):",step=0.1)
+d = st.number_input("Galectin-1(pg/mL):", step=0.1)
+e = st.number_input("Galectin-3(pg/mL):", step=0.1)
+f = st.number_input("IL-1 beta(pg/mL):",step=0.1)
 
 # 如果按下按钮
 if st.button("Predict"):  # 显示按钮
